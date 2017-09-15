@@ -1,0 +1,344 @@
+<!-- Developed by Haluk Ozduman, 2016-->
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="de"> <!--<![endif]-->
+<head>
+  <title>Resume</title>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML5 Resume/CV">
+  <meta name="author" content="Haluk Ozduman">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type=
+  'text/css'>
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar-wrapper">
+      <form>
+        <input type="radio" name="browser" onclick="selectLanguage(this.value)" value="deutsch" checked="checked"><img src="assets/images/de.svg" alt="German flag" width='30px' height='20px'>Deutsch &nbsp;
+        <input type="radio" name="browser" onclick="selectLanguage(this.value)" value="english"><img src="assets/images/gb.svg" alt="English flag" width='30px' height='20px'>English<br>
+			</form>
+			</br>
+      <!--profile-container-->
+      <div class="profile-container">
+        <img class="profile" src="assets/images/profile.png" height="125px" alt="" />
+        <h1 class="name">Haluk Özduman</h1>
+        <h3 id="jobTitle" class="tagline"></h3><!-- jobTitle english/german version in the script part -->
+      </div>
+      <!--contact-container-->
+      <div class="contact-container container-block">
+        <ul class="list-unstyled contact-list">
+          <li class="email"><i class="fa fa-envelope"></i><a href="mailto: halukozduman@gmail.com">halukozduman@gmail.com</a></li>
+          <li class="phone"><i class="fa fa-phone"></i><a href="tel:0176 281 30 514">0176 281 30 514</a></li>
+          <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/halukoz" target="_blank">linkedin.com/in/halukoz</a></li>
+          <li class="github"><i class="fa fa-github"></i><a href="https://github.com/halukoz" target="_blank">https://github.com/halukoz</a></li>
+        </ul>
+      </div>
+      <!-- english/german version of languages in the script part -->
+      <div class="languages-container container-block">
+        <h2 id="languageTitle" class="container-block-title"></h2>
+				<ul id="languageList" class="list-unstyled interests-list"></ul>
+			</div>
+      <!-- english/german version of permits in the script part -->
+      <div class="permits-container container-block">
+        <h2 id="permitTitle" class="container-block-title"></h2>
+        <ul id="permitList"  class="list-unstyled interests-list"></ul>
+      </div>
+      <!-- interests-->
+      <div class="interests-container container-block">
+        <h2 id="interestTitle"class="container-block-title"></h2>
+        <ul id="interestList" class="list-unstyled interests-list">
+        </ul>
+      </div>
+      <!-- english/german version of driving licence in the script part -->
+      <div class="permits-container container-block">
+        <h2 id="drivinglicenceTitle" class="container-block-title"></h2>
+        <ul id="drivinglicenceList" class="list-unstyled interests-list">
+        <!-- english/german version of driving licence in the script part -->
+      </div><!--//driving licence-->
+      <!--address-container-->
+      <div class="address-container container-block">
+        <h2 id="addressTitle" class="container-block-title"></h2>
+        <ul id="addressList" class="list-unstyled interests-list">
+        </ul>
+				<!-- english/german version of address in the script part -->
+      </div>
+    </div><!--//sidebar-wrapper-->
+
+    <div class="main-wrapper">
+      <section class="section summary-section">
+        <h2 id="carrierProfileTitle" class="section-title"></h2>
+          <div id="summary" class="summary">
+            <!-- english/german version in the script part -->
+          </div><!--//summary-->
+      </section><!--//section-->
+			<!-- some html tags about education in the script part, (english / german versions) -->
+			<section class="section education-section">
+        <h2 id="studyTitle" class="section-title"></h2>
+        <div class="item">
+          <div class="meta">
+            <div class="upper-row">
+              <h3 id="firstStudyTitle" class="job-title"></h3>
+                <div class="time">10.2012 - 09.2014</div>
+            </div><!--//upper-row-->
+            <div id="firstUniversityName" class="university"></div>
+          </div><!--//meta-->
+          <div id="firstStudyDescription" class="details"></div><!--//details-->
+        </div><!--//item-->
+				<div class="item">
+          <div class="meta">
+            <div class="upper-row">
+              <h3 id="secondStudyTitle" class="job-title"></h3>
+              <div class="time">10.2006 - 08.2011</div>
+            </div><!--//upper-row-->
+            <div id="secondUniversityName" class="university"></div>
+          </div><!--//meta-->
+          <div id="secondStudyDescription"class="details">
+          </div><!--//details-->
+        </div><!--//item-->
+      </section>
+      <!-- some html tags about experiences in the script part, (english / german versions) -->
+      <section class="section experiences-section">
+      <h2 id="experienceTitle" class="section-title"></h2>
+			<!-- First Job-->
+      <div class="item">
+        <div class="meta">
+          <div class="upper-row">
+           <h3 id="firstJobTitle" class="job-title"></h3>
+            <div id="firstJobDate" class="time"></div>
+          </div><!--//upper-row-->
+          <div id="firstCompanyName" class="company"></div>
+        </div><!--//meta-->
+        <div id="firstJobDescription"class="details"></div><!--//details-->
+      </div><!--//item-->
+
+			<!-- Second Job-->
+      <div class="item">
+        <div class="meta">
+          <div class="upper-row">
+            <h3 id="secondJobTitle" class="job-title"></h3>
+            <div id="secondJobDate" class="time">04.2013 - 08.2014</div>
+          </div><!--//upper-row-->
+          <div id="secondCompanyName" class="company"></div>
+        </div><!--//meta-->
+        <div id="secondJobDescription"class="details"></div><!--//details-->
+      </div><!--//item-->
+
+			<!-- Third Job-->
+			<div class="item">
+        <div class="meta">
+          <div class="upper-row">
+            <h3 id="thirdJobTitle" class="job-title"></h3>
+            <div id="thirdJobDate" class="time">08.2011 - 07.2012</div>
+          </div><!--//upper-row-->
+          <div id="thirdCompanyName" class="company"></div>
+        </div><!--//meta-->
+        <div id="thirdJobDescription"class="details">
+          <p></p>
+				</div><!--//details-->
+      </div><!--//item-->
+
+			<!-- Fourth Job-->
+			<div class="item">
+        <div class="meta">
+          <div class="upper-row">
+            <h3 id="fourthJobTitle" class="job-title"></h3>
+            <div id="fourthJobDate" class="time"> 06.2010 - 09.2010 </div>
+          </div><!--//upper-row-->
+          <div id="fourthCompanyName" class="company"></div>
+        </div><!--//meta-->
+        <div id="fourthJobDescription" class="details"></div><!--//details-->
+      </div><!--//item-->
+
+      </section><!--//section-->
+        <!-- some html tags about publications in the script part, (english / german versions) -->
+        <section class="section publications-section">
+          <h2 id="publicationTitle" class="section-title"></h2>
+          <div id="publicationDescription" class="intro"></div><!--//intro-->
+        </section><!--//section-->
+
+          <section class="skills-section section">
+            <h2 id="skillTitle" class="section-title"></h2>
+            <div class="skillset">
+              <div class="item">
+                <h3 class="level-title">Java</h3>
+                <div class="level-bar">
+                  <div class="level-bar-inner" data-level="95%"></div>
+                </div><!--//level-bar-->
+              </div><!--//item-->
+
+              <div class="item">
+                <h3 class="level-title">Eclipse &amp; Maven </h3>
+                <div class="level-bar">
+                  <div class="level-bar-inner" data-level="95%"></div>
+                </div><!--//level-bar-->
+              </div><!--//item-->
+
+              <div class="item">
+                <h3 class="level-title">HTML &amp; CSS &amp; SASS</h3>
+                <div class="level-bar">
+                  <div class="level-bar-inner" data-level="95%"></div>
+                </div><!--//level-bar-->
+              </div><!--//item-->
+
+              <div class="item">
+                <h3 class="level-title">Javascript &amp; jQuery</h3>
+                <div class="level-bar">
+                  <div class="level-bar-inner" data-level="90%"></div>
+                </div><!--//level-bar-->
+              </div><!--//item-->
+
+              <div class="item">
+                <h3 class="level-title">AngularJS </h3>
+                <div class="level-bar">
+                  <div class="level-bar-inner" data-level="90%"></div>
+                </div><!--//level-bar-->
+              </div><!--//item-->
+
+              <div class="item">
+                <h3 class="level-title">MongoDB &amp; MySQL</h3>
+                  <div class="level-bar">
+                    <div class="level-bar-inner" data-level="85%"></div>
+                  </div><!--//level-bar-->
+              </div><!--//item-->
+
+              <div class="item">
+                <h3 class="level-title">NPM &amp; Bower &amp; Karma </h3>
+                <div class="level-bar">
+                  <div class="level-bar-inner" data-level="85%"></div>
+                </div><!--//level-bar-->
+              </div><!--//item-->
+			  
+			  <div class="item">
+                <h3 class="level-title">PHP 7 </h3>
+                <div class="level-bar">
+                  <div class="level-bar-inner" data-level="75%"></div>
+                </div><!--//level-bar-->
+              </div><!--//item-->
+
+            </div>
+      </section><!--//skills-section-->
+			<!-- Return to Top -->
+      <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+    </div><!--//main-body-->
+  </div>
+ <script>
+ selectLanguage("deutsch"); // set as default, when user open the browser
+
+ // This function change the texts from german to english according to ids.
+function selectLanguage(language) {
+    if (language == 'english') {
+	  document.getElementById('summary').innerHTML = '<p>Highly skilled and experienced Software developer with expertise in Frontend and Backend developments. With my educational background and work experiences, I am interested in new technologies and developments. <a href="assets/downloads/haluk_ozduman_cv_eng.pdf" download="CV">(You can download my CV here <i class="fa fa-download"></i>)</a></p>';
+	  document.getElementById('carrierProfileTitle').innerHTML = '<i class="fa fa-user"></i>Career Profile';
+	  document.getElementById('jobTitle').innerHTML = 'Software Developer';
+	  document.getElementById('languageList').innerHTML = '<li>Turkish <span class="lang-desc">(Native)</span></li><li>English <span class="lang-desc">(Professional)</span></li><li>German <span class="lang-desc">(Professional)</span></li>'
+	  document.getElementById('languageTitle').innerHTML = 'Languages';
+	  document.getElementById('permitTitle').innerHTML = 'Work Permit';
+	  document.getElementById('permitList').innerHTML = '<li>Permanent residency <span class="perm-desc">(Germany)</li>';
+
+	  document.getElementById('interestTitle').innerHTML = 'Interests';
+	  document.getElementById('interestList').innerHTML = '<ul id="interestList" class="list-unstyled interests-list"><li>Technology</li><li>Politics</li><li>Travelling</li><li>Cooking</li></ul>';
+	  document.getElementById('drivinglicenceTitle').innerHTML = 'Driving license';
+	  document.getElementById('drivinglicenceList').innerHTML = '<li>B Class-Europe <span class="perm-desc">(Germany)</li>';
+	  document.getElementById('addressTitle').innerHTML = 'Address';
+	  document.getElementById('addressList').innerHTML = '<li>Fabricious Strasse-1</li><li>10589 Berlin/Germany</li>';
+
+	  document.getElementById('studyTitle').innerHTML = '<i class="fa fa-graduation-cap"></i>Education';
+	  document.getElementById('firstStudyTitle').innerHTML = 'MSc. Computer Science, Good';
+	  document.getElementById('firstStudyDescription').innerHTML = '<p><strong>Master-Thesis</strong>: “Statistical Program Analysis - Program Slicing for Value Analysis.”</p><p>Main Focus: Intelligent Systems & Statistical Program Analysis</p>';
+	  document.getElementById('secondStudyTitle').innerHTML = 'MSc. Elektronik Engineering, Good';
+	  document.getElementById('secondStudyDescription').innerHTML = '<p><strong>Bachelor-Thesis</strong>: “Using Electromagnetic Input for Multi-User or Two-Handed Spatial Gestural Interaction based on the Digital Compass.”</p><p>Main Focus: Information Technology, Computer Hardware & Software</p>';
+    document.getElementById('firstUniversityName').innerHTML = 'Saarland Universty, Saarbrücken, Germany,';
+	  document.getElementById('secondUniversityName').innerHTML = 'Sabanci University, Istanbul, Turkey,';
+
+	  document.getElementById('experienceTitle').innerHTML = '<i class="fa fa-briefcase"></i>Experience';
+	  document.getElementById('firstJobTitle').innerHTML = 'Software Developer';
+	  document.getElementById('firstJobDate').innerHTML = '09.2014 - Present';
+	  document.getElementById('firstCompanyName').innerHTML = 'GT-ARC GmbH, TU-Berlin, Germany';
+	  document.getElementById('firstJobDescription').innerHTML = '<p>Software Development for Network Security & Internet of Things. Java Frontend (Web)-Backend development.</p><p>Collect data from different data sources and apply security analysis with machine learning and visualize the results using web-based user interfaces.</p>';
+
+	  document.getElementById('secondJobTitle').innerHTML = 'Software Developer(Student Job)';
+	  document.getElementById('secondCompanyName').innerHTML = 'AbsInt GmbH, Saarbrücken, Germany';
+	  document.getElementById('secondJobDescription').innerHTML = '<p>The development of test cases for components of static program analysis tools for safety-critical embedded applications.</p><p>Master\'s thesis entitled 	&ldquo;Program Slicing For Value Analysis&ldquo; , an industrial analysis framework for binary programs has been extended prototypically by interactive search via program dependencies.</p>';
+
+	  document.getElementById('thirdJobTitle').innerHTML = 'Software Developer';
+	  document.getElementById('thirdCompanyName').innerHTML = 'Adbtech Software Company, Istanbul, Turkey';
+	  document.getElementById('thirdJobDescription').innerHTML = '<p>Java Frontend(Web)-Backend Developer.</p>';
+
+	  document.getElementById('fourthJobTitle').innerHTML = 'Software Developer(Intern)';
+	  document.getElementById('fourthCompanyName').innerHTML = 'ABB-Robotdalen Research Center, Vasteras, Sweden';
+	  document.getElementById('fourthJobDescription').innerHTML = '<p>Software development for robots. Visualize the information from the robot with a user interface.</p>';
+
+	  document.getElementById('publicationTitle').innerHTML = '<i class="fa fa-archive"></i>PUBLICATION';
+	  document.getElementById('publicationDescription').innerHTML = '<p>Using Electromagnetic Input for Multi-User or Two-Handed Spatial Gestural Interaction based on the Digital Compass <a href="assets/downloads/publication.pdf" download="Publication">(You can download my publication here <i class="fa fa-download"></i>)</a></p>';
+	  document.getElementById('skillTitle').innerHTML = '<i class="fa fa-wrench"></i>Skills &amp; Proficiency';
+	}
+	else if (language == "deutsch") {
+
+	  document.getElementById('summary').innerHTML = '<p>Qualifizierte und erfahrene Softwareentwickler mit Erfahrung in Frontend- und Backend Entwicklungen. Mit meinem Bildungshintergrund und Arbeitserfahrungen konzentriere ich mich auf neue Technologien und Entwicklungen. <a href="assets/downloads/haluk_ozduman_cv_de.pdf" download="CV">(Sie können den Lebenslauf hier herunterladen <i class="fa fa-download"></i>)</a></p>';
+    document.getElementById('carrierProfileTitle').innerHTML = '<i class="fa fa-user"></i>Karriere Profil';
+	  document.getElementById('jobTitle').innerHTML = 'Softwareentwickler';
+	  document.getElementById('languageList').innerHTML = '<li>Türkisch <span class="lang-desc">(Muttersprache)</span></li><li>Englisch <span class="lang-desc">(C1)</span></li><li>Deutsche <span class="lang-desc">(C1)</span></li>';
+	  document.getElementById('languageTitle').innerHTML = 'Sprachen';
+	  document.getElementById('permitTitle').innerHTML = 'Arbeitserlaubnis';
+	  document.getElementById('permitList').innerHTML = '<li>Niederlassungserlaubnis <span class="perm-desc">(Deutschland)</li>';
+
+	  document.getElementById('interestTitle').innerHTML = 'Interessen';
+	  document.getElementById('interestList').innerHTML = '<li>Technologie</li><li>Politik</li><li>Reisen</li><li>Kochen</li>';
+	  document.getElementById('drivinglicenceTitle').innerHTML = 'führerschein';
+	  document.getElementById('drivinglicenceList').innerHTML = '<li>B Klasse-Europe <span class="perm-desc">(Deutschland)</li>';
+	  document.getElementById('addressTitle').innerHTML = 'Addresse';
+	  document.getElementById('addressList').innerHTML = '<li>Fabricious Strasse-1</li><li>10589 Berlin/Deutschland</li>',
+
+	  document.getElementById('studyTitle').innerHTML = '<i class="fa fa-graduation-cap"></i>Bildung';
+	  document.getElementById('firstStudyTitle').innerHTML = 'MSc. Informatik, Gut';
+	  document.getElementById('firstStudyDescription').innerHTML = '<p><strong>Masterarbeit:</strong> “Statistical Program Analysis - Program Slicing for Value Analysis.”</p><p>Schwerpunkt: Intelligente Systeme & Statische Programmanalysewerkzeuge.</p>';
+    document.getElementById('secondStudyTitle').innerHTML = 'BSc. Elektrotechnik, Gut';
+	  document.getElementById('secondStudyDescription').innerHTML = '<p><strong>Bachelorarbeit:</strong> “Using Electromagnetic Input for Multi-User or Two-Handed Spatial Gestural Interaction based on the Digital Compass”</p><p>Schwerpunkt: Informationstechnik, Computerhardware und Software.</p>';
+	  document.getElementById('firstUniversityName').innerHTML = 'Universität Saarland, Saarbrücken, Deutschland,';
+	  document.getElementById('secondUniversityName').innerHTML = 'Sabanci University, Istanbul, Turkei,';
+
+	  document.getElementById('experienceTitle').innerHTML = '<i class="fa fa-briefcase"></i>Berufserfahrung';
+	  document.getElementById('firstJobTitle').innerHTML = 'Softwareentwickler';
+	  document.getElementById('firstJobDate').innerHTML = '09.2014 - Heute';
+	  document.getElementById('firstCompanyName').innerHTML = 'GT-ARC GmbH, TU-Berlin, Deutschland';
+	  document.getElementById('firstJobDescription').innerHTML = '<p>Software Entwicklung für Netzwerksicherheit & Internet der Dinge. Java Frontend(Web), Backend Entwicklung.</p><p>Sammeln von Daten über Netzwerk von unterschiedlichen Datasource und Anwendung der Sicherheitsanalyse mit maschinelles Lernen und Visualisierung der Ergebnisse mit Web-Base-Benutzeroberfläche.</p>';
+
+	  document.getElementById('secondJobTitle').innerHTML = 'Softwareentwickler (Als Studentischer Mitarbeiter)';
+	  document.getElementById('secondCompanyName').innerHTML = 'AbsInt GmbH, Saarbrücken, Deutschland';
+	  document.getElementById('secondJobDescription').innerHTML = '<p>Die Entwicklung von Testfällen für Komponenten von statischen Programmanalysewerkzeugen für sicherheitskritische eingebettete Anwendungen.</p><p>Ich habe in AbsInt GmbH meine Masterarbeit mit dem Titel "Program Slicing For Value Analysis" erarbeitet. Hierzu habe ich ein bestehendes industrielles Analyse-Framework für Binärprogramme um interaktives Suchen über Programmabhängigkeiten prototypisch erweitert. </p>';
+
+	  document.getElementById('thirdJobTitle').innerHTML = 'Softwareentwickler';
+	  document.getElementById('thirdCompanyName').innerHTML = 'Adbtech Software Company, Istanbul, Turkei';
+	  document.getElementById('thirdJobDescription').innerHTML = 'Java Frontend(Web)-Backend Entwicklung.';
+
+	  document.getElementById('fourthJobTitle').innerHTML = 'Softwareentwickler(Praktikant)';
+	  document.getElementById('fourthCompanyName').innerHTML = 'ABB-Robotdalen Forschungszentrum, Vasteras, Schweden';
+	  document.getElementById('fourthJobDescription').innerHTML = '<p>Softwareentwicklung für Roboter. Zeigen die informationen von den Roboter mit einer Benutzer Interface.</p>';
+
+	  document.getElementById('publicationTitle').innerHTML = '<i class="fa fa-archive"></i>PUBLIKATION';
+	  document.getElementById('publicationDescription').innerHTML = '<p>Using Electromagnetic Input for Multi-User or Two-Handed Spatial Gestural Interaction based on the Digital Compass <a href="assets/downloads/publication.pdf" download="Publication">(Sie können die Publikation hier herunterladen <i class="fa fa-download"></i>)</a></p>';
+	  document.getElementById('skillTitle').innerHTML = '<i class="fa fa-wrench"></i>FÄHIGKEITEN &amp; KOMPETENZ';
+	}
+}
+</script>
+  <!-- Javascript -->
+  <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- my js under assets/js -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

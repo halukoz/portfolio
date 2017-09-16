@@ -1,5 +1,5 @@
 # resumesite
-My resume/CV website, about my personal information, educational background and experiences. To see the website: https://halukoz.github.io/resumesite/
+My resume/CV website, about my personal information, educational background and experiences. To see the website: https://halukoz.github.io/portfolio/
 
 ##Technologies
 HTML-5, CSS3, Javascript. 

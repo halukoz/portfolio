@@ -113,7 +113,18 @@
       <!-- some html tags about experiences in the script part, (english / german versions) -->
       <section class="section experiences-section">
       <h2 id="experienceTitle" class="section-title"></h2>
-			<!-- First Job-->
+      <!-- First Job-->
+      <div class="item">
+        <div class="meta">
+          <div class="upper-row">
+           <h3 id="firstJobTitle" class="job-title"></h3>
+            <div id="firstJobDate" class="time"></div>
+          </div><!--//upper-row-->
+          <div id="firstCompanyName" class="company"></div>
+        </div><!--//meta-->
+        <div id="firstJobDescription"class="details"></div><!--//details-->
+      </div><!--//item-->
+	 <!-- Second Job-->
       <div class="item">
         <div class="meta">
           <div class="upper-row">
@@ -125,7 +136,7 @@
         <div id="firstJobDescription"class="details"></div><!--//details-->
       </div><!--//item-->
 
-			<!-- Second Job-->
+	  <!-- Third Job-->
       <div class="item">
         <div class="meta">
           <div class="upper-row">
@@ -137,8 +148,8 @@
         <div id="secondJobDescription"class="details"></div><!--//details-->
       </div><!--//item-->
 
-			<!-- Third Job-->
-			<div class="item">
+	    <!-- Fiftth Job-->
+		<div class="item">
         <div class="meta">
           <div class="upper-row">
             <h3 id="thirdJobTitle" class="job-title"></h3>
@@ -261,26 +272,31 @@ function selectLanguage(language) {
 	  document.getElementById('firstStudyDescription').innerHTML = '<p><strong>Master-Thesis</strong>: “Statistical Program Analysis - Program Slicing for Value Analysis.”</p><p>Main Focus: Intelligent Systems & Statistical Program Analysis</p>';
 	  document.getElementById('secondStudyTitle').innerHTML = 'MSc. Elektronik Engineering, Good';
 	  document.getElementById('secondStudyDescription').innerHTML = '<p><strong>Bachelor-Thesis</strong>: “Using Electromagnetic Input for Multi-User or Two-Handed Spatial Gestural Interaction based on the Digital Compass.”</p><p>Main Focus: Information Technology, Computer Hardware & Software</p>';
-    document.getElementById('firstUniversityName').innerHTML = 'Saarland Universty, Saarbrücken, Germany,';
+      document.getElementById('firstUniversityName').innerHTML = 'Saarland Universty, Saarbrücken, Germany,';
 	  document.getElementById('secondUniversityName').innerHTML = 'Sabanci University, Istanbul, Turkey,';
 
 	  document.getElementById('experienceTitle').innerHTML = '<i class="fa fa-briefcase"></i>Experience';
 	  document.getElementById('firstJobTitle').innerHTML = 'Software Developer';
-	  document.getElementById('firstJobDate').innerHTML = '09.2014 - Present';
-	  document.getElementById('firstCompanyName').innerHTML = 'GT-ARC GmbH, TU-Berlin, Germany';
-	  document.getElementById('firstJobDescription').innerHTML = '<p>Software Development for Network Security & Internet of Things. Java Frontend (Web)-Backend development.</p><p>Collect data from different data sources and apply security analysis with machine learning and visualize the results using web-based user interfaces.</p>';
+	  document.getElementById('firstJobDate').innerHTML = '03.2017 - 10.2017';
+	  document.getElementById('firstCompanyName').innerHTML = 'Care.com, TU-Berlin, Germany';
+	  document.getElementById('firstJobDescription').innerHTML = '<p>Frontend Web Software Development, responsive UI for Mobile and Desktop applications.</p><p>Backend Software Development with Groovy, develop new features for the product.</p>';
 
-	  document.getElementById('secondJobTitle').innerHTML = 'Software Developer(Student Job)';
-	  document.getElementById('secondCompanyName').innerHTML = 'AbsInt GmbH, Saarbrücken, Germany';
-	  document.getElementById('secondJobDescription').innerHTML = '<p>The development of test cases for components of static program analysis tools for safety-critical embedded applications.</p><p>Master\'s thesis entitled 	&ldquo;Program Slicing For Value Analysis&ldquo; , an industrial analysis framework for binary programs has been extended prototypically by interactive search via program dependencies.</p>';
+	  document.getElementById('secondJobTitle').innerHTML = 'Software Developer';
+	  document.getElementById('secondJobDate').innerHTML = '09.2014 - 03.2017';
+	  document.getElementById('secondCompanyName').innerHTML = 'GT-ARC GmbH, TU-Berlin, Germany';
+	  document.getElementById('secondJobDescription').innerHTML = '<p>Software Development for Network Security & Internet of Things. Java Frontend (Web)-Backend development.</p><p>Collect data from different data sources and apply security analysis with machine learning and visualize the results using web-based user interfaces.</p>';
 
-	  document.getElementById('thirdJobTitle').innerHTML = 'Software Developer';
-	  document.getElementById('thirdCompanyName').innerHTML = 'Adbtech Software Company, Istanbul, Turkey';
-	  document.getElementById('thirdJobDescription').innerHTML = '<p>Java Frontend(Web)-Backend Developer.</p>';
+	  document.getElementById('thirdJobTitle').innerHTML = 'Software Developer(Student Job)';
+	  document.getElementById('thirdCompanyName').innerHTML = 'AbsInt GmbH, Saarbrücken, Germany';
+	  document.getElementById('thirdJobDescription').innerHTML = '<p>The development of test cases for components of static program analysis tools for safety-critical embedded applications.</p><p>Master\'s thesis entitled 	&ldquo;Program Slicing For Value Analysis&ldquo; , an industrial analysis framework for binary programs has been extended prototypically by interactive search via program dependencies.</p>';
 
-	  document.getElementById('fourthJobTitle').innerHTML = 'Software Developer(Intern)';
-	  document.getElementById('fourthCompanyName').innerHTML = 'ABB-Robotdalen Research Center, Vasteras, Sweden';
-	  document.getElementById('fourthJobDescription').innerHTML = '<p>Software development for robots. Visualize the information from the robot with a user interface.</p>';
+	  document.getElementById('fourthJobTitle').innerHTML = 'Software Developer';
+	  document.getElementById('fourthCompanyName').innerHTML = 'Adbtech Software Company, Istanbul, Turkey';
+	  document.getElementById('fourthJobDescription').innerHTML = '<p>Java Frontend(Web)-Backend Developer.</p>';
+
+	  document.getElementById('fifthJobTitle').innerHTML = 'Software Developer(Intern)';
+	  document.getElementById('fifthCompanyName').innerHTML = 'ABB-Robotdalen Research Center, Vasteras, Sweden';
+	  document.getElementById('fifthJobDescription').innerHTML = '<p>Software development for robots. Visualize the information from the robot with a user interface.</p>';
 
 	  document.getElementById('publicationTitle').innerHTML = '<i class="fa fa-archive"></i>PUBLICATION';
 	  document.getElementById('publicationDescription').innerHTML = '<p>Using Electromagnetic Input for Multi-User or Two-Handed Spatial Gestural Interaction based on the Digital Compass <a href="assets/downloads/publication.pdf" download="Publication">(You can download my publication here <i class="fa fa-download"></i>)</a></p>';
@@ -306,28 +322,32 @@ function selectLanguage(language) {
 	  document.getElementById('studyTitle').innerHTML = '<i class="fa fa-graduation-cap"></i>Bildung';
 	  document.getElementById('firstStudyTitle').innerHTML = 'MSc. Informatik, Gut';
 	  document.getElementById('firstStudyDescription').innerHTML = '<p><strong>Masterarbeit:</strong> “Statistical Program Analysis - Program Slicing for Value Analysis.”</p><p>Schwerpunkt: Intelligente Systeme & Statische Programmanalysewerkzeuge.</p>';
-    document.getElementById('secondStudyTitle').innerHTML = 'BSc. Elektrotechnik, Gut';
+      document.getElementById('secondStudyTitle').innerHTML = 'BSc. Elektrotechnik, Gut';
 	  document.getElementById('secondStudyDescription').innerHTML = '<p><strong>Bachelorarbeit:</strong> “Using Electromagnetic Input for Multi-User or Two-Handed Spatial Gestural Interaction based on the Digital Compass”</p><p>Schwerpunkt: Informationstechnik, Computerhardware und Software.</p>';
 	  document.getElementById('firstUniversityName').innerHTML = 'Universität Saarland, Saarbrücken, Deutschland,';
 	  document.getElementById('secondUniversityName').innerHTML = 'Sabanci University, Istanbul, Turkei,';
 
 	  document.getElementById('experienceTitle').innerHTML = '<i class="fa fa-briefcase"></i>Berufserfahrung';
-	  document.getElementById('firstJobTitle').innerHTML = 'Softwareentwickler';
-	  document.getElementById('firstJobDate').innerHTML = '09.2014 - Heute';
-	  document.getElementById('firstCompanyName').innerHTML = 'GT-ARC GmbH, TU-Berlin, Deutschland';
-	  document.getElementById('firstJobDescription').innerHTML = '<p>Software Entwicklung für Netzwerksicherheit & Internet der Dinge. Java Frontend(Web), Backend Entwicklung.</p><p>Sammeln von Daten über Netzwerk von unterschiedlichen Datasource und Anwendung der Sicherheitsanalyse mit maschinelles Lernen und Visualisierung der Ergebnisse mit Web-Base-Benutzeroberfläche.</p>';
+	  document.getElementById('firstJobTitle').innerHTML = 'Software Developer';
+	  document.getElementById('firstJobDate').innerHTML = '03.2017 - 10.2017';
+	  document.getElementById('firstCompanyName').innerHTML = 'Care.com, TU-Berlin, Germany';
+	  document.getElementById('firstJobDescription').innerHTML = '<p>Frontend Web Software Entwicklung, responsive UI für Mobile und Desktop-Anwendungen.</p><p>Backend Software-Entwicklung mit Groovy, entwickeln neues Feature für das Produkt.</p>';
+	  document.getElementById('secondJobTitle').innerHTML = 'Softwareentwickler';
+	  document.getElementById('secondJobDate').innerHTML = '09.2014 - 03.2017';
+	  document.getElementById('secondCompanyName').innerHTML = 'GT-ARC GmbH, TU-Berlin, Deutschland';
+	  document.getElementById('secondJobDescription').innerHTML = '<p>Software Entwicklung für Netzwerksicherheit & Internet der Dinge. Java Frontend(Web), Backend Entwicklung.</p><p>Sammeln von Daten über Netzwerk von unterschiedlichen Datasource und Anwendung der Sicherheitsanalyse mit maschinelles Lernen und Visualisierung der Ergebnisse mit Web-Base-Benutzeroberfläche.</p>';
 
-	  document.getElementById('secondJobTitle').innerHTML = 'Softwareentwickler (Als Studentischer Mitarbeiter)';
-	  document.getElementById('secondCompanyName').innerHTML = 'AbsInt GmbH, Saarbrücken, Deutschland';
-	  document.getElementById('secondJobDescription').innerHTML = '<p>Die Entwicklung von Testfällen für Komponenten von statischen Programmanalysewerkzeugen für sicherheitskritische eingebettete Anwendungen.</p><p>Ich habe in AbsInt GmbH meine Masterarbeit mit dem Titel "Program Slicing For Value Analysis" erarbeitet. Hierzu habe ich ein bestehendes industrielles Analyse-Framework für Binärprogramme um interaktives Suchen über Programmabhängigkeiten prototypisch erweitert. </p>';
+	  document.getElementById('thirdJobTitle').innerHTML = 'Softwareentwickler (Als Studentischer Mitarbeiter)';
+	  document.getElementById('thirdCompanyName').innerHTML = 'AbsInt GmbH, Saarbrücken, Deutschland';
+	  document.getElementById('thirdJobDescription').innerHTML = '<p>Die Entwicklung von Testfällen für Komponenten von statischen Programmanalysewerkzeugen für sicherheitskritische eingebettete Anwendungen.</p><p>Ich habe in AbsInt GmbH meine Masterarbeit mit dem Titel "Program Slicing For Value Analysis" erarbeitet. Hierzu habe ich ein bestehendes industrielles Analyse-Framework für Binärprogramme um interaktives Suchen über Programmabhängigkeiten prototypisch erweitert. </p>';
 
-	  document.getElementById('thirdJobTitle').innerHTML = 'Softwareentwickler';
-	  document.getElementById('thirdCompanyName').innerHTML = 'Adbtech Software Company, Istanbul, Turkei';
-	  document.getElementById('thirdJobDescription').innerHTML = 'Java Frontend(Web)-Backend Entwicklung.';
+	  document.getElementById('fourthJobTitle').innerHTML = 'Softwareentwickler';
+	  document.getElementById('fourthCompanyName').innerHTML = 'Adbtech Software Company, Istanbul, Turkei';
+	  document.getElementById('fourthJobDescription').innerHTML = 'Java Frontend(Web)-Backend Entwicklung.';
 
-	  document.getElementById('fourthJobTitle').innerHTML = 'Softwareentwickler(Praktikant)';
-	  document.getElementById('fourthCompanyName').innerHTML = 'ABB-Robotdalen Forschungszentrum, Vasteras, Schweden';
-	  document.getElementById('fourthJobDescription').innerHTML = '<p>Softwareentwicklung für Roboter. Zeigen die informationen von den Roboter mit einer Benutzer Interface.</p>';
+	  document.getElementById('fifthJobTitle').innerHTML = 'Softwareentwickler(Praktikant)';
+	  document.getElementById('fifthCompanyName').innerHTML = 'ABB-Robotdalen Forschungszentrum, Vasteras, Schweden';
+	  document.getElementById('fifthJobDescription').innerHTML = '<p>Softwareentwicklung für Roboter. Zeigen die informationen von den Roboter mit einer Benutzer Interface.</p>';
 
 	  document.getElementById('publicationTitle').innerHTML = '<i class="fa fa-archive"></i>PUBLIKATION';
 	  document.getElementById('publicationDescription').innerHTML = '<p>Using Electromagnetic Input for Multi-User or Two-Handed Spatial Gestural Interaction based on the Digital Compass <a href="assets/downloads/publication.pdf" download="Publication">(Sie können die Publikation hier herunterladen <i class="fa fa-download"></i>)</a></p>';

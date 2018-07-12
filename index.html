@@ -113,6 +113,20 @@
       <!-- some html tags about experiences in the script part, (english / german versions) -->
       <section class="section experiences-section">
       <h2 id="experienceTitle" class="section-title"></h2>
+	  
+	  <!-- Current Job-->
+      <div class="item">
+        <div class="meta">
+          <div class="upper-row">
+           <h3 id="currentJobTitle" class="job-title"></h3>
+            <div id="currentJobDate" class="time"></div>
+          </div><!--//upper-row-->
+          <div id="currentCompanyName" class="company"></div>
+        </div><!--//meta-->
+        <div id="currentJobDescription"class="details"></div><!--//details-->
+      </div><!--//item-->
+	  
+	  
       <!-- First Job-->
       <div class="item">
         <div class="meta">
@@ -276,6 +290,12 @@ function selectLanguage(language) {
 	  document.getElementById('secondUniversityName').innerHTML = 'Sabanci University, Istanbul, Turkey,';
 
 	  document.getElementById('experienceTitle').innerHTML = '<i class="fa fa-briefcase"></i>Experience';
+	  
+	  document.getElementById('currentJobTitle').innerHTML = 'Software Developer';
+	  document.getElementById('currentJobDate').innerHTML = '11.2017 - now';
+	  document.getElementById('currentCompanyName').innerHTML = 'Opitz Consulting Berlin, Germany';
+	  document.getElementById('currentJobDescription').innerHTML = '<p>Full Stack Software Developement for different customers.</p><p>Frontend: AngularJS, Angular2,4,5,6 Javascript, Jquery, HTML, CSS, Sass</p><p>Backend: Java-8</p><p>Cloud Based development with AWS.</p>';
+	  
 	  document.getElementById('firstJobTitle').innerHTML = 'Software Developer';
 	  document.getElementById('firstJobDate').innerHTML = '03.2017 - 10.2017';
 	  document.getElementById('firstCompanyName').innerHTML = 'Care.com, TU-Berlin, Germany';
@@ -328,7 +348,13 @@ function selectLanguage(language) {
 	  document.getElementById('secondUniversityName').innerHTML = 'Sabanci University, Istanbul, Turkei,';
 
 	  document.getElementById('experienceTitle').innerHTML = '<i class="fa fa-briefcase"></i>Berufserfahrung';
-	  document.getElementById('firstJobTitle').innerHTML = 'Software Developer';
+	  
+	  document.getElementById('currentJobTitle').innerHTML = 'Softwareentwickler';
+	  document.getElementById('currentJobDate').innerHTML = '11.2017 - now';
+	  document.getElementById('currentCompanyName').innerHTML = 'Opitz Consulting Berlin, Germany';
+	  document.getElementById('currentJobDescription').innerHTML = '<p>Full Stack Software Entwicklung für den Kunden.</p><p>Frontend: AngularJS, Angular2,4,5,6 Javascript, Jquery, HTML, CSS, Sass</p><p>Backend: Java-8</p><p>Cloud-basierte Entwicklung with AWS.</p>';
+
+	  document.getElementById('firstJobTitle').innerHTML = 'Softwareentwickler';
 	  document.getElementById('firstJobDate').innerHTML = '03.2017 - 10.2017';
 	  document.getElementById('firstCompanyName').innerHTML = 'Care.com, TU-Berlin, Germany';
 	  document.getElementById('firstJobDescription').innerHTML = '<p>Frontend Web Software Entwicklung, responsive UI für Mobile und Desktop-Anwendungen.</p><p>Backend Software-Entwicklung mit Groovy, entwickeln neues Feature für das Produkt.</p>';
